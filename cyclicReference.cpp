@@ -33,5 +33,11 @@ int main() {
     mother -> setSon(son);
     mother -> setDaughter(dau);
 
+    cout << "\n\n";
+
+    {
+        shared_ptr<Mother> mother = std::shared_ptr<Mother> (new Mother);
+    }
+
     return 0;
 }
